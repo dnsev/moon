@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>Character Recognition</title>
+<link rel="stylesheet" href="style.css" />
+<script src="../jquery.js"></script>
+<script src="script.js"></script>
+</head>
+<body>
+
+<noscript id="noscript_warning">
+	Enable Javascript
+</noscript>
+<div id="main" style="display: none;">
+
+<div style="text-align: center;">
+	<div id="selection">
+		<div style="padding: 32px 0px 16px 0px;" id="syllabary_selector"></div>
+
+		<div id="character_selection"></div>
+
+		<div style="padding-top: 32px; padding-bottom: 32px; text-align: center;"><a class="Start" id="start">Start</a></div>
+	</div>
+
+	<div style="display: none;" id="execution">
+		<div style="width: 100%; height: 100px;"></div>
+
+		<div style="display: inline-block;">
+			<div class="TargetSymbol" id="TargetSymbol"></div>
+
+			<div style="width: 100%; height: 20px;"></div>
+
+			<div class="InputContainer">
+			<form action="#" method="get" id="input_form">
+				<span style="vertical-align: middle;"><input type="textbox" id="textbox" value="" placeholder="" autocomplete="off" class="InputTextbox" /><!--
+				--><input type="submit" id="submit" value="ok" class="InputSubmit" /></span>
+			</form>
+			</div>
+		</div><div style="position: relative; left: 0; width: 0px; overflow: visible; padding-left: 16px; display: inline-block;"><a id="options" class="OptionsLink">options</a></div>
+
+		<div style="width: 100%; height: 20px;"></div>
+
+		<div id="options_div" style="width: 640px; text-align: left; display: none; border-top: 1px solid #dddddd; padding: 8px 20px 8px 20px;">
+			<span style="padding-left: 8px; vertical-align: middle;"><input type="textbox" id="epoch_set_count" value="0" style="background: #ffffff; border: 1px #dddddd solid; padding: 2px; width: 64px;" /><span style="padding-left: 8px; vertical-align: middle;">Sets per epoch</span></span>
+		</div>
+		<div style="width: 640px; text-align: left; display: inline-block; border-top: 1px solid #dddddd; padding: 4px 20px 0px 20px;">
+			<div style="font-size: 32px; padding-bottom: 4px; vertical-align: middle;">Results<a class="ReturnLink" id="return_link">(character selection)</a><div style="float: right; font-size: 16px; text-align: right; color: #888888;"><span id="percent_correct_overall"></span><span class="PercentageUnset">%</span><span id="total_tests" style="display: none;"> / <span id="total_test_count" class="PercentageUnset"></span></span> Overall<br />
+			<span id="perfect_count" style="display: none;"></span> <span id="percent_correct_epoch"></span> / <span id="percent_epoch" class="PercentageUnset"></span><span id="total_tries_container" style="display: none;"> / <span id="total_tries"></span></span> <span id="epoch_label">Total</span></div><div style="clear: both;"></div></div>
+			<div style="padding: 0px 20px 0px 20px;" id="results_container"></div>
+		</div>
+	</div>
+</div>
+
+</div>
+
+</body>
+</html>

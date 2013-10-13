@@ -1,0 +1,517 @@
+body {
+	font-family: Verdana;
+	font-size: 16px;
+	margin: 0px;
+	padding: 0px;
+	overflow-y: scroll;
+	background: #f7f7f7;
+}
+.InputContainer {
+	text-align: center;
+	background: #ffffff;
+	border: 1px solid #dddddd;
+	display: inline-block;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+}
+.InputTextbox {
+	text-align: left;
+	width: 64px;
+	font-size: 32px;
+	padding: 8px;
+	background: transparent;
+	border: 0px hidden;
+	color: #000000;
+}
+.InputSubmit {
+	text-align: center;
+	font-size: 20px;
+	padding: 8px;
+	background: transparent;
+	border: 0px hidden;
+	color: #888888;
+}
+.TargetSymbol {
+	text-align: center;
+	vertical-align: middle;
+	background: #ffffff;
+	border: 1px solid #dddddd;
+	height: 80px;
+	font-size: 52px;
+	padding: 4px;
+	line-height: 78px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+}
+.ResultContainer {
+}
+.ResultSeparator1 {
+	padding: 4px;
+}
+.ResultSeparator2 {
+	height: 1px;
+	background: #dddddd;
+}
+.ResultGood {
+	font-size: 24px;
+	background: #bfff8f;
+	padding: 4px;
+}
+.ResultGoodCharacter {
+	font-weight: bold;
+	padding-right: 16px;
+}
+.ResultGoodActual {
+}
+.ResultBad {
+	font-size: 24px;
+	background: #ffbf8f;
+	padding: 4px;
+}
+.ResultBadCharacter {
+	font-weight: bold;
+	padding-right: 16px;
+}
+.ResultBadActual {
+	padding-right: 16px;
+}
+.ResultBadResponse {
+	font-size: 18px;
+	color: #887868;
+}
+.ResultBadActualSilent {
+	color: #aa9a8a;
+}
+.ResultGoodActualSilent {
+	color: #9aaa8a;
+}
+
+.SelectionRowContainer {
+	vertical-align: middle;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+.SelectionCellContainer {
+	vertical-align: middle;
+	padding-left: 2px;
+	padding-right: 2px;
+	display: inline-block;
+}
+
+a.SelectionColumnLabel, a.SelectionColumnLabel:link, a.SelectionColumnLabel:visited {
+	vertical-align: middle;
+	text-align: center;
+	width: 80px;
+	height: 32px;
+	font-size: 22px;
+	line-height: 32px;
+	background: #ffffff;
+	border: 1px solid #dddddd;
+	display: inline-block;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	padding: 4px;
+	cursor: pointer;
+}
+a.SelectionColumnLabel:hover {
+	vertical-align: middle;
+	text-align: center;
+	width: 80px;
+	height: 32px;
+	font-size: 22px;
+	line-height: 32px;
+	background: #dfefff;
+	border: 1px solid #8fafff;
+	display: inline-block;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	padding: 4px;
+	cursor: pointer;
+}
+a.SelectionColumnLabel:active {
+	vertical-align: middle;
+	text-align: center;
+	width: 80px;
+	height: 32px;
+	font-size: 22px;
+	line-height: 32px;
+	background: #cfe8ff;
+	border: 1px solid #8fafff;
+	display: inline-block;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	padding: 4px;
+	cursor: pointer;
+}
+
+a.SelectionRowLabel, a.SelectionRowLabel:link, a.SelectionRowLabel:visited {
+	vertical-align: middle;
+	text-align: center;
+	width: 40px;
+	height: 64px;
+	font-size: 22px;
+	line-height: 62px;
+	background: #ffffff;
+	border: 1px solid #dddddd;
+	display: inline-block;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	padding: 4px;
+	cursor: pointer;
+}
+a.SelectionRowLabel:hover {
+	vertical-align: middle;
+	text-align: center;
+	width: 40px;
+	height: 64px;
+	font-size: 22px;
+	line-height: 62px;
+	background: #dfefff;
+	border: 1px solid #8fafff;
+	display: inline-block;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	padding: 4px;
+	cursor: pointer;
+}
+a.SelectionRowLabel:active {
+	vertical-align: middle;
+	text-align: center;
+	width: 40px;
+	height: 64px;
+	font-size: 22px;
+	line-height: 62px;
+	background: #cfe8ff;
+	border: 1px solid #8fafff;
+	display: inline-block;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	padding: 4px;
+	cursor: pointer;
+}
+
+a.SelectionCross, a.SelectionCross:link, a.SelectionCross:visited {
+	vertical-align: middle;
+	text-align: center;
+	width: 40px;
+	height: 32px;
+	background: #ffffff;
+	border: 1px solid #dddddd;
+	display: inline-block;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	padding: 4px;
+	cursor: pointer;
+}
+a.SelectionCross:hover {
+	vertical-align: middle;
+	text-align: center;
+	width: 40px;
+	height: 32px;
+	background: #dfefff;
+	border: 1px solid #8fafff;
+	display: inline-block;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	padding: 4px;
+	cursor: pointer;
+}
+a.SelectionCross:active {
+	vertical-align: middle;
+	text-align: center;
+	width: 40px;
+	height: 32px;
+	background: #cfe8ff;
+	border: 1px solid #8fafff;
+	display: inline-block;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	padding: 4px;
+	cursor: pointer;
+}
+
+a.SelectionOff, a.SelectionOff:link, a.SelectionOff:visited {
+	vertical-align: middle;
+	text-align: center;
+	width: 80px;
+	height: 64px;
+	background: #ffffff;
+	border: 1px solid #dddddd;
+	display: inline-block;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	padding: 4px;
+	cursor: pointer;
+}
+a.SelectionOff:hover {
+	vertical-align: middle;
+	text-align: center;
+	width: 80px;
+	height: 64px;
+	background: #f6ffe8;
+	border: 1px solid #bfff8f;
+	display: inline-block;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	padding: 4px;
+	cursor: pointer;
+}
+a.SelectionOff:active {
+	vertical-align: middle;
+	text-align: center;
+	width: 80px;
+	height: 64px;
+	background: #efffdf;
+	border: 1px solid #bfff8f;
+	display: inline-block;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	padding: 4px;
+	cursor: pointer;
+}
+
+a.SelectionOn, a.SelectionOn:link, a.SelectionOn:visited {
+	vertical-align: middle;
+	text-align: center;
+	width: 80px;
+	height: 64px;
+	background: #def4ff;
+	border: 1px solid #8fafff;
+	display: inline-block;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	padding: 4px;
+	cursor: pointer;
+}
+a.SelectionOn:hover {
+	vertical-align: middle;
+	text-align: center;
+	width: 80px;
+	height: 64px;
+	background: #dfefff;
+	border: 1px solid #8fafff;
+	display: inline-block;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	padding: 4px;
+	cursor: pointer;
+}
+a.SelectionOn:active {
+	vertical-align: middle;
+	text-align: center;
+	width: 80px;
+	height: 64px;
+	background: #cfe8ff;
+	border: 1px solid #8fafff;
+	display: inline-block;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	padding: 4px;
+	cursor: pointer;
+}
+
+a.Start, a.Start:link, a.Start:visited {
+	vertical-align: middle;
+	text-align: center;
+	font-size: 32px;
+	background: #ffffff;
+	border: 1px solid #dddddd;
+	display: inline-block;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	padding: 8px 16px 8px 16px;
+	cursor: pointer;
+}
+a.Start:hover {
+	vertical-align: middle;
+	text-align: center;
+	font-size: 32px;
+	background: #dfefff;
+	border: 1px solid #8fafff;
+	display: inline-block;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	padding: 8px 16px 8px 16px;
+	cursor: pointer;
+}
+a.Start:active {
+	vertical-align: middle;
+	text-align: center;
+	font-size: 32px;
+	background: #cfe8ff;
+	border: 1px solid #8fafff;
+	display: inline-block;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	padding: 8px 16px 8px 16px;
+	cursor: pointer;
+}
+
+a.ReturnLink, a.ReturnLink:link, a.ReturnLink:visited {
+	padding-left: 16px;
+	vertical-align: middle;
+	font-size: 16px;
+	cursor: pointer;
+	color: #888888;
+}
+a.ReturnLink:hover {
+	padding-left: 16px;
+	vertical-align: middle;
+	font-size: 16px;
+	cursor: pointer;
+	color: #000000;
+	text-decoration: underline;
+}
+a.ReturnLink:active {
+	padding-left: 16px;
+	vertical-align: middle;
+	font-size: 16px;
+	cursor: pointer;
+	color: #000000;
+	text-decoration: underline;
+}
+
+.SyllabarySelectorDiv {
+	display: inline-block;
+	padding: 0px 4px 0px 4px;
+}
+
+a.SyllabarySelectorOn, a.SyllabarySelectorOn:link, a.SyllabarySelectorOn:visited {
+	vertical-align: middle;
+	text-align: center;
+	font-size: 32px;
+	background: #dfefff;
+	border: 1px solid #8fafff;
+	display: inline-block;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	padding: 8px 16px 8px 16px;
+	cursor: pointer;
+}
+a.SyllabarySelectorOn:hover {
+	vertical-align: middle;
+	text-align: center;
+	font-size: 32px;
+	background: #cfe8ff;
+	border: 1px solid #8fafff;
+	display: inline-block;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	padding: 8px 16px 8px 16px;
+	cursor: pointer;
+}
+a.SyllabarySelectorOn:active {
+	vertical-align: middle;
+	text-align: center;
+	font-size: 32px;
+	background: #bfdfff;
+	border: 1px solid #6fafff;
+	display: inline-block;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	padding: 8px 16px 8px 16px;
+	cursor: pointer;
+}
+
+a.SyllabarySelector, a.SyllabarySelector:link, a.SyllabarySelector:visited {
+	vertical-align: middle;
+	text-align: center;
+	font-size: 32px;
+	background: #ffffff;
+	border: 1px solid #dddddd;
+	display: inline-block;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	padding: 8px 16px 8px 16px;
+	cursor: pointer;
+}
+a.SyllabarySelector:hover {
+	vertical-align: middle;
+	text-align: center;
+	font-size: 32px;
+	background: #dfefff;
+	border: 1px solid #8fafff;
+	display: inline-block;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	padding: 8px 16px 8px 16px;
+	cursor: pointer;
+}
+a.SyllabarySelector:active {
+	vertical-align: middle;
+	text-align: center;
+	font-size: 32px;
+	background: #cfe8ff;
+	border: 1px solid #8fafff;
+	display: inline-block;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	padding: 8px 16px 8px 16px;
+	cursor: pointer;
+}
+
+.SelectionDisabled {
+	vertical-align: middle;
+	text-align: center;
+	width: 80px;
+	height: 64px;
+	background: #efefef;
+	border: 1px solid #dddddd;
+	display: inline-block;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	padding: 4px;
+}
+
+.SelectionCharacter {
+	font-size: 28px;
+	padding-bottom: 4px;
+}
+.SelectionDescription {
+	font-size: 16px;
+}
+.SelectionDescriptionSilent {
+	color: #bfbfbf !important;
+}
+.SelectionObsolete {
+	text-decoration: line-through;
+	color: #888888;
+}
+
+.PercentageUnset {
+	color: #000000;
+}
+.PercentageGreat {
+	color: #0080f0;
+}
+.PercentageGood {
+	color: #00f000;
+}
+.PercentageOkay {
+	color: #f08000;
+}
+.PercentageBad {
+	color: #f00000;
+}
+
+a.OptionsLink, a.OptionsLink:link, a.OptionsLink:visited {
+	vertical-align: middle;
+	font-size: 16px;
+	cursor: pointer;
+	color: #cccccc;
+}
+a.OptionsLink:hover {
+	vertical-align: middle;
+	font-size: 16px;
+	cursor: pointer;
+	color: #444444;
+	text-decoration: underline;
+}
+a.OptionsLink:active {
+	vertical-align: middle;
+	font-size: 16px;
+	cursor: pointer;
+	color: #000000;
+	text-decoration: underline;
+}
+

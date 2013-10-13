@@ -1,0 +1,41 @@
+body {
+	font-family: Verdana;
+	font-size: 16px;
+	margin: 0px;
+	padding: 0px;
+	overflow-y: scroll;
+	background: #f7f7f7;
+	color: #000000;
+}
+
+.content {
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	text-align: center;
+	line-height: 0;
+	white-space: nowrap;
+}
+.content:before {
+	content: "";
+	display: inline-block;
+	width: 0px;
+	height: 100%;
+	vertical-align: middle;
+}
+.content_inner {
+	display: inline-block;
+	vertical-align: middle;
+	line-height: normal;
+	white-space: normal;
+}
+
+a {
+	text-decoration: none;
+	color: #000000;
+}
+a:hover {
+	color: #008800;
+}
